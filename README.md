@@ -1,39 +1,21 @@
-# flip-a-coin
-  ## constructor
-     super(props);
-    this.state = {
-        gelen: "",
-        toplam: 0,
-        tura: 0,
-        yazi: 0,
-        donuyor: "false"
-    }
-  ## flip = () => {
-    var sonuc = Math.round(Math.random())
-    sonuc ? 
-    this.setState({
-        tura: this.state.tura + 1,
-        gelen: "tura",
-        toplam: this.state.toplam + 1 }):
-    this.setState({
-        yazi: this.state.yazi + 1,
-        gelen: "yazi" ,
-        toplam: this.state.toplam + 1})
+![coin](https://media.giphy.com/media/MZKsayPD3ikxesi1xk/giphy.gif)
 
-    this.setState({donuyor: true}); 
-    setTimeout(
-      () => this.setState({donuyor: false}),
-       1000);
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## render(){
-    return (
-      <div>
-        <Coin 
-         gelen={this.state.gelen}
-         donuyor={this.state.donuyor} />
-        <button onClick={this.flip} >Flip</button>
-        <h1>Toplam  : {this.state.toplam} </h1>
-        <h1>Tura : {this.state.tura} </h1>
-        <h1>Yazi : {this.state.yazi} </h1>
-      </div>
-    
+## Available Scripts
+
+In the project directory, you can run:
+
+### npm install
+
+Runs the app in the development mode.<br />
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+The page will reload if you make edits.<br />
+You will also see any lint errors in the console.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
