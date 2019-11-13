@@ -1,3 +1,5 @@
+# Flip A Coin
+
 ![coin](https://media.giphy.com/media/MZKsayPD3ikxesi1xk/giphy.gif)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
